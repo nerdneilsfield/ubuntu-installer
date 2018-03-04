@@ -27,7 +27,7 @@ apt install -y fish git vim screenfetch tmux curl guake lm-sensors i3 i3lock i3b
 
 screenfetch -E
 
-apt  install -y xbacklight fbterm dolphin pcmanfm cmus fortune rofi ibus-rime librime-data-double-pinyin librime-data-emoji 
+apt  install -y xbacklight fbterm  cmus fortune rofi ibus-rime librime-data-double-pinyin librime-data-emoji 
 
 sudo add-apt-repository -y ppa:papirus/papirus
 sudo add-apt-repository -y ppa:fsgmhoward/shadowsocks-libev
