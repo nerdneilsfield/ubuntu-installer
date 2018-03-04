@@ -6,15 +6,18 @@ echo "Backup your sources.list"
 
 mv /ept/apt/sources.list /etc/apt/sources.list_backup
 
-echo "# 默认注释了源码仓库，如有需要可自行取消注释 \
-deb https://mirrors.geekpie.org/ubuntu/ xenial main restricted universe multiverse \
-# deb-src https://mirrors.geekpie.org/ubuntu/ xenial main restricted universe multiverse \
-deb https://mirrors.geekpie.org/ubuntu/ xenial-updates main restricted universe multiverse \
-# deb-src https://mirrors.geekpie.org/ubuntu/ xenial-updates main restricted universe multiverse \
-deb https://mirrors.geekpie.org/ubuntu/ xenial-backports main restricted universe multiverse \
-# deb-src https://mirrors.geekpie.org/ubuntu/ xenial-backports main restricted universe multiverse \
-deb https://mirrors.geekpie.org/ubuntu/ xenial-security main restricted universe multiverse \
-# deb-src https://mirrors.geekpie.org/ubuntu/ xenial-security main restricted universe multiverse" > /etc/apt/sources.list
+# echo "# 默认注释了源码仓库，如有需要可自行取消注释 \
+# deb https://mirrors.geekpie.org/ubuntu/ xenial main restricted universe multiverse \
+# # deb-src https://mirrors.geekpie.org/ubuntu/ xenial main restricted universe multiverse \
+# deb https://mirrors.geekpie.org/ubuntu/ xenial-updates main restricted universe multiverse \
+# # deb-src https://mirrors.geekpie.org/ubuntu/ xenial-updates main restricted universe multiverse \
+# deb https://mirrors.geekpie.org/ubuntu/ xenial-backports main restricted universe multiverse \
+# # deb-src https://mirrors.geekpie.org/ubuntu/ xenial-backports main restricted universe multiverse \
+# deb https://mirrors.geekpie.org/ubuntu/ xenial-security main restricted universe multiverse \
+# # deb-src https://mirrors.geekpie.org/ubuntu/ xenial-security main restricted universe multiverse" > /etc/apt/sources.list
+
+
+wget https://github.com/nerdneilsfield/ubuntu-installer/raw/master/desktop/sources.list -O /etc/apt/sources.list
 
 apt update
 
