@@ -23,7 +23,7 @@ apt update
 
 apt -y upgrade
 
-apt install -y fish git vim screenfetch tmux curl guake lm-sensors i3 i3lock i3blocks
+apt install -y fish git vim screenfetch tmux curl guake lm-sensors i3 i3lock i3blocks ttf-wqy-microhei ttf-wqy-zenhei
 
 screenfetch -E
 
@@ -32,16 +32,20 @@ apt  install -y xbacklight fbterm dolphin pacmanfm cmus fortune rofi ibus-rime l
 sudo add-apt-repository -y ppa:papirus/papirus
 sudo add-apt-repository -y ppa:fsgmhoward/shadowsocks-libev
 sudo add-apt-repository -y ppa:hda-me/proxychains-ng
-sudo add-apt-repository -y sudo add-apt-repository ppa:kubuntu-ppa/backports
+sudo add-apt-repository -y ppa:kubuntu-ppa/backports
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
 apt  update
 
+apt remove -y python3-aptdaemon
+
 apt install -y shaodwsocks-libev simple-obfs code proxychains-ng ubuntu
 apt install -y kubuntu-desktop inxi morse
 apt install -y --install-recommends arc-kde
+
+bash <(curl -L -s https://install.direct/go.sh)
 
 
 echo "Input your name"
