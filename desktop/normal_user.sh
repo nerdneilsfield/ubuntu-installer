@@ -56,7 +56,13 @@ sudo bash Anaconda3-5.1.0-Linux-x86_64.sh
 
 echo "set PATH $HOME/anaconda3/bin $PATH" >> ~/.config/fish/config.fish
 
-
+wget https://dl.google.com/go/go1.10.linux-amd64.tar.gz -O go_latest.tar.xz
+tar xvf go_latest.tar.xz
+set GOROOT $HOME/app/go
+echo "set GOROOT $HOME/app/go"
+mkdir -p ~/go
+set GOPATH $HOME/go
+echo "set GOPATH $HOME/go"
 
 curl -L https://get.oh-my.fish | fish
 
