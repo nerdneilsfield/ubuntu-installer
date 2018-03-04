@@ -52,7 +52,7 @@ echo "set PATH $HOME/.cargo/bin $PATH" >> ~/.config/fish/config.fish
 wget https://mirrors-lan.geekpie.org/anaconda/archive/Anaconda3-5.1.0-Linux-x86_64.sh
 
 
-sudo bash Anaconda3-5.1.0-Linux-x86_64.sh
+bash Anaconda3-5.1.0-Linux-x86_64.sh
 
 echo "set PATH $HOME/anaconda3/bin $PATH" >> ~/.config/fish/config.fish
 
